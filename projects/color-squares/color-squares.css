@@ -1,0 +1,64 @@
+:root {
+    --neon-green: #39ff14;
+    --dark-green: #24b30e;
+    --hot-pink: #ff1450;
+    --dark-pink: #b30e38;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: var(--dark-pink);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.row {
+    width: 60%;
+    margin-top: 200px;
+}
+
+.col {
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.neon-green {
+    background: var(--neon-green);
+}
+
+.dark-green {
+    background: var(--dark-green);
+}
+
+.hot-pink {
+    background: var(--hot-pink);
+}
+
+.dark-pink {
+    background: var(--dark-pink);
+}
+
+.square {
+    padding: 50px;
+    text-align: center;
+    margin: 2px;
+}
+
+.square:hover {
+    cursor: pointer;
+}
