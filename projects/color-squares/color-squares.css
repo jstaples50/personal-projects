@@ -14,6 +14,20 @@
     background: var(--dark-pink);
 }
 
+ul {
+    list-style-type: none;
+    margin-left: 100px;
+}
+
+li {
+    margin: 10px;
+    padding: 10px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
 .d-flex {
     display: flex;
 }
@@ -27,8 +41,15 @@
     justify-content: space-between;
 }
 
+.justify-space-acround {
+    justify-content: space-around;
+}
+
 .row {
     width: 60%;
+}
+
+.top-row {
     margin-top: 200px;
 }
 
@@ -57,6 +78,7 @@
     padding: 50px;
     text-align: center;
     margin: 2px;
+    border: 2px solid black;
 }
 
 .square:hover {

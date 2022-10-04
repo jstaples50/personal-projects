@@ -8,14 +8,26 @@
         <title>Color Squares</title>
     </head>
     <body>
-    <div class="containter d-flex justify-align-center">
-        <div class="row d-flex justify-space-between">
-            <div class="col d-flex square neon-green justify-align-center"><p>Content</p></div>
-            <div class="col d-flex square neon-green justify-align-center"><p>Content</p></div>
-            <div class="col d-flex square neon-green justify-align-center"><p>Content</p></div>
-            <div class="col d-flex square hot-pink justify-align-center"><p>Content</p></div>
-            <div class="col d-flex square dark-green justify-align-center"><p>Content</p></div>
+        <div class="containter d-flex justify-space-around">
+            <aside>
+                <ul>
+                    <li class="neon-green">neon green</li>
+                    <li class="dark-green">dark green</li>
+                    <li class="hot-pink">hot pink</li>
+                    <li class="dark-pink">dark pink</li>
+                </ul>
+            </aside>
+            <div class="containter d-flex justify-align-center">
+                <div class="row d-flex justify-space-between">
+                    <div id="one" class="col d-flex square justify-align-center"><p>1</p></div>
+                    <div id="two" class="col d-flex square justify-align-center"><p>2</p></div>
+                    <div id="three" class="col d-flex square justify-align-center"><p>3</p></div>
+                    <div id="four" class="col d-flex square justify-align-center"><p>4</p></div>
+                    <div id="five" class="col d-flex square justify-align-center"><p>5</p></div>
+                </div>
+            </div>
         </div>
-    </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="./color-squares.js"></script>
     </body>
 </html>
