@@ -1,0 +1,16 @@
+- concept: learn effective CSS from Kevin
+- concept: timer-intervals
+- concept: event-listeners (JQuery)
+- concept: prevent-default
+- concept: keyboard-events
+- concept: event-bubbling
+- concept: local-storage/local-storage-objects (JSON)
+- project: web-api-student-project (#28)
+- concept: form-elements
+- concept: event-delegation
+- concept: bootstrap *LATEST VERSION* (components, layout, utilities, extend)
+- concept: JQuery-widgits (UI)
+- concept: moment/find more in current use time api 
+- project: third-party-api-student-project (#28)
+- concept: all of server side api concepts up to (#20)
+
