@@ -3,19 +3,24 @@
 var colorsArray = ['neon-green', 'dark-green', 'hot-pink', 'dark-pink']
 
 var buttonsElArray = $('li');
-buttonsElArray.onClick('click', assignRandomSquare())
+$(buttonsElArray).on('click', assignRandomSquare)
 
+var squareArray = $('.square')
 
 // *FUNCTIONS*
 
 function assignRandomSquare() {
-    var squareArray = $('.square')
-
+    for (var i = 0; i < squareArray.length; i++) {
+        $(squareArray[i]).removeClass(colorsArray);
+        var randColor = colorsArray[Math.floor(Math.random() * colorsArray.length)]
+        $(squareArray[i]).addClass(`${randColor}`)
+    }
 }
 
 
 // *TESTS*
-
-
+console.log(buttonsElArray)
+console.log(colorsArray[0])
+console.log(squareArray[1])
 
 // *EXECUTION*
