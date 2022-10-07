@@ -1,0 +1,11 @@
+Progress
+
+10/7: 
+    - Created functionality to add rows based on user input 
+    - Created functionality to remove input html
+
+
+**TODOS**
+
+- Create more specific button choices in aside
+    - Each button should have a seperate option for colors that still randomizes
