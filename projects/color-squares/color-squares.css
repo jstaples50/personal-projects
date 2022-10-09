@@ -1,8 +1,30 @@
 :root {
+    /* Neon Green */
     --neon-green: #39ff14;
     --dark-green: #24b30e;
     --hot-pink: #ff1450;
     --dark-pink: #b30e38;
+
+    /* Gold */
+    --light-gold: #FFD700;
+    --yellow: #ffec00;
+    --dark-gold: #b3a500;
+    --purple: #7b00ff;
+
+    /* Aquamarine */
+    --teal: #7fffd4;
+    --ocean: #59b2a2;
+    --skin-tone: #ffa87f;
+    --dark-tone: #b37659;
+
+    /* Burnt Orange */
+    --burnt-orange: #cc5500;
+    --light-orange: #cc6400;
+    --brown: #8f4600;
+    --smooth-blue: #007fcc;
+
+    /* Misc Colors */
+    --pastel-blue: #aec6cf;
 }
 
 *{
@@ -82,6 +104,10 @@ li:hover {
     min-height: 50px;
 }
 
+
+/* Colors */
+
+/* Neon Green */
 .neon-green {
     background: var(--neon-green);
 }
@@ -98,6 +124,66 @@ li:hover {
     background: var(--dark-pink);
 }
 
+/* Gold */
+
+.light-gold {
+    background: var(--light-gold);
+}
+
+.yellow {
+    background: var(--yellow);
+}
+
+.dark-gold {
+    background: var(--dark-gold);
+}
+
+.purple {
+    background: var(--purple);
+}
+
+/* Aquamarine */
+
+.teal {
+    background: var(--teal);
+}
+
+.ocean {
+    background: var(--ocean);
+}
+
+.skin-tone {
+    background: var(--skin-tone);
+}
+
+.dark-tone {
+    background: var(--dark-tone);
+}
+
+/* Burnt Orange */
+
+.burnt-orange {
+    background: var(--burnt-orange);
+}
+
+.light-orange {
+    background: var(--light-orange);
+}
+
+.brown {
+    background: var(--brown);
+}
+
+.smooth-blue {
+    background: var(--smooth-blue);
+}
+
+/* Misc Colors */
+
+.pastel-blue {
+    background: var(--pastel-blue);
+}
+
 .square {
     padding: 50px;
     text-align: center;
@@ -108,3 +194,4 @@ li:hover {
 .square:hover {
     cursor: pointer;
 }
+
