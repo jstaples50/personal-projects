@@ -5,12 +5,20 @@ var goldArray = ['light-gold', 'yellow', 'dark-gold', 'purple'];
 var aquamarineArray = ['teal', 'ocean', 'skin-tone', 'dark-tone'];
 var burntOrangeArray = ['burnt-orange', 'light-orange', 'brown', 'smooth-blue'];
 
+var iterableColorArray = [neonArray, goldArray, aquamarineArray, burntOrangeArray];
+
 var allColorsArray = createMasterColorArray(neonArray, goldArray, aquamarineArray, burntOrangeArray);
 
 
 
 var buttonsElArray = $('li');
-$(buttonsElArray).on('click', assignRandomSquare);
+
+// Event Listener for random choice of all colors
+
+// $(buttonsElArray).on('click', assignRandomSquare);
+
+// Event Listener for choice of colors specific to button pressed
+$(buttonsElArray).on('click', assignColorArrayToSquares);
 
 var squareArray = '';
 
@@ -43,6 +51,22 @@ function assignRandomSquare(event) {
         var randColor = allColorsArray[Math.floor(Math.random() * allColorsArray.length)]
         $(squareArray[i]).addClass(`${randColor}`)
     }
+}
+
+function assignColorArrayToSquares(event) {
+    var colorArray;
+    for (var i = 0; i < iterableColorArray.length; i++) {
+        if (iterableColorArray[i].includes(`${event.target.className}`)) {
+            colorArray = iterableColorArray[i];
+        }
+    }
+
+    for (var i = 0; i < squareArray.length; i++) {
+        $(squareArray[i]).removeClass(allColorsArray);
+        var randColor = colorArray[Math.floor(Math.random() * colorArray.length)]
+        $(squareArray[i]).addClass(`${randColor}`)
+    }
+
 }
 
 function askUserforNumberOfRows() {
