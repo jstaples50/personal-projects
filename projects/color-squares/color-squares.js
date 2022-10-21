@@ -1,24 +1,36 @@
+// *ISSUES*
+    // when random button is selected, error occurs and color does not change 
+    // **EDGE CASE** if no length is selected, no squares are rendered
+
+
 // *GLOBAL VARIABLES*
 
 var neonArray = ['neon-green', 'dark-green', 'hot-pink', 'dark-pink']
 var goldArray = ['light-gold', 'yellow', 'dark-gold', 'purple'];
 var aquamarineArray = ['teal', 'ocean', 'skin-tone', 'dark-tone'];
 var burntOrangeArray = ['burnt-orange', 'light-orange', 'brown', 'smooth-blue'];
+var nuetralColor = ['pastel-blue'];
 
 var iterableColorArray = [neonArray, goldArray, aquamarineArray, burntOrangeArray];
 
-var allColorsArray = createMasterColorArray(neonArray, goldArray, aquamarineArray, burntOrangeArray);
-
-
+var allColorsArray = createMasterColorArray(neonArray, goldArray, aquamarineArray, burntOrangeArray, nuetralColor);
 
 var buttonsElArray = $('li');
 
+
 // Event Listener for random choice of all colors
 
-// $(buttonsElArray).on('click', assignRandomSquare);
+$('#random-colors').on('click', assignRandomSquareColor);
 
 // Event Listener for choice of colors specific to button pressed
-$(buttonsElArray).on('click', assignColorArrayToSquares);
+
+for (var i = 0; i < $(buttonsElArray).length; i++) {
+    if (!$(buttonsElArray[i]).is('#random-colors')) {
+        console.log($(buttonsElArray)[i])
+        $(buttonsElArray[i]).on('click', assignColorArrayToSquares);
+    } 
+}
+
 
 var squareArray = '';
 
@@ -42,9 +54,8 @@ function createMasterColorArray(...arrays) {
     return masterArray;
 }
 
-function assignRandomSquare(event) {
+function assignRandomSquareColor(event) {
     colorChoice = event.target.className;
-    console.log(colorChoice)
 
     for (var i = 0; i < squareArray.length; i++) {
         $(squareArray[i]).removeClass(allColorsArray);
@@ -105,6 +116,6 @@ function testEventListener() {
     console.log('test');
 }
 
-console.log(allColorsArray);
+// console.log(allColorsArray);
 
 // *EXECUTION*
